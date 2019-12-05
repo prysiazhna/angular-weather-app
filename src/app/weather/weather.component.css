@@ -1,0 +1,30 @@
+.weather_temp {
+  display: inline-block;
+  width: 100px;
+  position: absolute;
+  bottom: 5px;
+  margin: 0;
+  left: 5px;
+}
+
+.weather_wind {
+  display: inline-block;
+  width: 100px;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  margin: 0;
+}
+.weather_img {
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+.temp_img{
+  width: 20px;
+  margin-bottom: -3px;
+}
+.wind_img{
+  width: 30px;
+  margin-bottom: -10px;
+}

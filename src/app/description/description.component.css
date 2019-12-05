@@ -1,0 +1,22 @@
+.descr_wrap {
+  text-align: center;
+  padding-top: 6px;
+}
+.social_icons_wrap {
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+}
+.icons_num {
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
+.social_icons {
+  width: 35px;
+  margin: 0 0 -12px 0px;
+}
+.descr_text {
+  margin: 5px 0 0 5px;
+}

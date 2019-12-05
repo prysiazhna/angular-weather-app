@@ -1,0 +1,23 @@
+<div class="wrapp">
+  <div class="app">
+    <div *ngFor="let place of places">
+      <p class="place_title" [id]="place.id" (click)="click(place.id)">
+        {{ place.title }}
+      </p>
+    </div>
+  </div>
+
+  <!-- <p>{{currentPlace.weather.temp}}</p> -->
+  <div class="information" *ngIf="currentPlace; else choice">
+
+    <div class="weather">
+      <app-weather [weather]="currentPlace"></app-weather>
+    </div>
+    <div class="description">
+      <app-description [description]="currentPlace"></app-description>
+    </div>
+  </div> 
+  <ng-template #choice >
+    <div class="choice">Select place</div>
+  </ng-template>
+</div>
