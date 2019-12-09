@@ -1,0 +1,5 @@
+<div *ngFor="let place of places">
+  <p class="place_title" [id]="place.id" (click)="onClick(place.id)">
+    {{ place.title }}
+  </p>
+</div>

@@ -1,15 +1,15 @@
-import { places } from './mockdata';
-import { Component } from "@angular/core";
+import { Place } from './mockdata';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  currentPlace: object;
-  places = places;
-  click(placeId: number) {
-    this.currentPlace = this.places.find(place => place.id === placeId);
+export class AppComponent implements OnInit {
+  public currentPlace: Place;
+  public SelectPlace(place: Place): void {
+    this.currentPlace = place;
   }
+  public ngOnInit(): void {}
 }

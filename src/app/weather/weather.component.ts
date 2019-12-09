@@ -1,11 +1,11 @@
-import { Component, Input } from "@angular/core";
-import { Weather } from "../app.interface";
+import { Weather } from './../mockdata';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: "app-weather",
-  templateUrl: "./weather.component.html",
-  styleUrls: ["./weather.component.css"]
+  selector: 'app-weather',
+  templateUrl: './weather.component.html',
+  styleUrls: ['./weather.component.css'],
 })
 export class WeatherComponent {
-  @Input() weather: Weather;
+  @Input() public weather: Weather;
 }

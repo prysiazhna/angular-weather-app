@@ -1,7 +1,6 @@
+import { ListComponent } from './list/list.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WeatherComponent } from './weather/weather.component';
 import { DescriptionComponent } from './description/description.component';
@@ -10,13 +9,11 @@ import { DescriptionComponent } from './description/description.component';
   declarations: [
     AppComponent,
     WeatherComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    ListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
